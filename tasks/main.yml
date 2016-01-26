@@ -29,8 +29,7 @@
 
 - name: Install docker package
   apt:
-    name: "{{ docker_pkg_name }}"
-    state: "{{ docker_version }}"
+    name: "{{ docker_pkg_name }}={{ docker_version }}"
     update_cache: yes
     cache_valid_time: "{{ docker_apt_cache_valid_time }}"
 
