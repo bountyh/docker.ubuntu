@@ -3,6 +3,9 @@
 docker_pkg_name: docker-engine
 docker_apt_cache_valid_time: 600
 
+# docker-engine version
+docker_version: latest
+
 # docker dns path for docker.io package ( changed at ubuntu 14.04 from docker to docker.io )
 docker_defaults_file_path: /etc/default/docker
 
