@@ -27,10 +27,10 @@
     update_cache: yes
     state: present
 
-- name: Install (or update) docker package
+- name: Install docker package
   apt:
     name: "{{ docker_pkg_name }}"
-    state: "{{ 'latest' if update_docker_package else 'present' }}"
+    state: "{{ docker_version }}"
     update_cache: yes
     cache_valid_time: "{{ docker_apt_cache_valid_time }}"
 
